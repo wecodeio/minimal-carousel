@@ -1,5 +1,6 @@
 function Carousel(settings){
   'use strict';
+  settings = settings || {};
   this.carousel = document.querySelector(settings.carousel || '.carousel');
   this.slides = this.carousel.querySelectorAll('ul li');
   this.delay = settings.delay || 2.5;
