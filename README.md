@@ -4,11 +4,11 @@ A minimalist carousel. No jQuery.
 
 ## Options
 
-* `carousel`: css selector on carousel container. Defaults in `.carousel`
-* `delay`: delay between slides. In seconds. Defaults in `2.5` secs
-* `autoplay`: wether or not has to play automaticaly. Defaults in `true`
+* `carousel`: css selector of carousel container. Defaults to `.carousel`
+* `delay`: delay between slides in seconds. Defaults to `2.5` secs
+* `autoplay`: whether or not it plays automaticaly. Defaults to `true`
 
-##  of usage
+##  Usage
 
 ### HTML
 
