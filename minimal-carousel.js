@@ -42,3 +42,11 @@ Carousel.prototype.play = function () {
     }, this.delay * 1000);
   }
 };
+
+Carousel.prototype.stop = function () {
+  'use strict';
+  if (this.interval) {
+    clearInterval(this.interval);
+  }
+};
+
