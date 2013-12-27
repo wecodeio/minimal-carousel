@@ -1,28 +1,48 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <title>Minimal Carousel</title>
   <style>
+  .carousel {
+    width: 50%;
+    margin: 50px auto;
+  }
+  .carousel ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
   .carousel ul li {
     display: none;
+    font-family: sans;
+    font-style: 2em;
+    text-align: center;
+  }
+  .button-set {
+    text-align: center;
   }
   </style>
-  <script type="text/javascript" src="minimal-carousel.js"></script>
 </head>
 <body>
-
   <div class="carousel">
     <ul>
-      <li>
-        First impressive message!
-      </li>
-      <li>
-        Second message with all the magic
-      </li>
+      <li>First impressive message!</li>
+      <li>Second message with all the magic.</li>
+      <li>Also, you can configure Minimal Carousel as you want.</li>
     </ul>
   </div>
+  <div class="button-set">
+    <button onclick="myCarousel.prev();">prev()</button>
+    <button onclick="myCarousel.stop();">stop()</button>
+    <button onclick="myCarousel.play();">play()</button>
+    <button onclick="myCarousel.next();">next()</button>
+  </div>
 
-  <script>
-    new Carousel({})
+  <script type="text/javascript" src="minimal-carousel.js"></script>
+  <script type="text/javascript">
+    var myCarousel = new Carousel();
   </script>
-
 </body>
 </html>
+
