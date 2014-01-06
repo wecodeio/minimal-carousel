@@ -2,6 +2,10 @@
 
 A minimalist carousel. No jQuery.
 
+## Demo
+
+[See it live!](http://labs.wecode.io/minimal-carousel/)
+
 ## Options
 
 * `carousel`: css selector of carousel container. Defaults to `.carousel`
@@ -19,6 +23,9 @@ A minimalist carousel. No jQuery.
         </li>
         <li>
           Second message with all the magic
+        </li>
+        <li>
+          Also, you can configure minimal carousel as you want.
         </li>
       </ul>
     </div>

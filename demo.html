@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Minimal Carousel</title>
+  <title>minimal carousel - demo</title>
   <style>
   .carousel {
     width: 50%;
@@ -25,11 +25,12 @@
   </style>
 </head>
 <body>
+  <h1>minimal carousel - demo</h1>
   <div class="carousel">
     <ul>
       <li>First impressive message!</li>
       <li>Second message with all the magic.</li>
-      <li>Also, you can configure Minimal Carousel as you want.</li>
+      <li>Also, you can configure minimal carousel as you want.</li>
     </ul>
   </div>
   <div class="button-set">
@@ -38,6 +39,43 @@
     <button onclick="myCarousel.play();">play()</button>
     <button onclick="myCarousel.next();">next()</button>
   </div>
+
+<hr/>
+
+<h2>Usage</h2>
+
+<h3>HTML</h3>
+<pre>
+  &lt;div class="carousel"&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        First impressive message!
+      &lt;/li&gt;
+      &lt;li&gt;
+        Second message with all the magic
+      &lt;/li&gt;
+      &lt;li&gt;
+        Also, you can configure minimal carousel as you want.
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+</pre>
+
+<h3>CSS</h3>
+<pre>
+    .carousel ul li {
+      display: none;
+    }
+</pre>
+
+<h3>Javascript</h3>
+  <pre>
+    new Carousel({
+      carousel: '.carousel',
+      delay: 2.5,
+      autoplay: true
+    })
+  </pre>
 
   <script type="text/javascript" src="minimal-carousel.js"></script>
   <script type="text/javascript">
