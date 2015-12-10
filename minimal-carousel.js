@@ -35,7 +35,7 @@ Carousel.prototype.prev = function () {
   for (var s = 0; s < this.slides.length; s += 1) {
     this.slides[s].style.display = 'none';
   }
-  this.current_slide = Math.abs(this.current_slide - 1) % this.slides.length;
+  this.current_slide = Math.abs(this.current_slide - 1 + this.slides.length) % this.slides.length;
   this.slides[this.current_slide].style.display = 'block';
   if (this.autoplay && this.interval) {
     var that = this;
